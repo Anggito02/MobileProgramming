@@ -1,0 +1,134 @@
+<resources>
+    <!-- Home  -->
+    <string name="app_name">PPBProject</string>
+    <string name="home_name">Anggito Anju\nHartawan Manalu</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="profile_desc">Final Year Informatics Engineering Undergraduate Student in
+        Institut Teknologi Sepuluh Nopember. Specializing in Back-End
+        Technologies, Cloud (AWS), and XR Development.</string>
+    <string name="btn_more_about">My Experiences</string>
+    <!-- End Home  -->
+
+    <!-- Exp General -->
+    <string name="tech_stack">Tech Stacks</string>
+
+        <!-- Icon Name -->
+        <string name="exp_tech_icon_laravel_0">Laravel Icon</string>
+        <string name="exp_tech_icon_nodejs_0">Node JS Icon</string>
+        <string name="exp_tech_icon_aspnet_0">ASP.Net Core Icon</string>
+        <string name="exp_tech_icon_mysql_0">MySQL Icon</string>
+        <string name="exp_tech_icon_postgresql_0">PostgreSQL Icon</string>
+        <string name="exp_tech_icon_sqlserver_0">SQL Server Icon</string>
+
+        <string name="exp_tech_icon_tableau_1">Tableau Icon</string>
+        <string name="exp_tech_icon_sqlserver_1">SQL Server Icon</string>
+        <string name="exp_tech_icon_figma_1">Figma Icon</string>
+
+        <string name="exp_tech_icon_unity3d_2">Unity 3D Icon</string>
+        <string name="exp_tech_icon_vuforia_2">Vuforia Engine Icon</string>
+        <string name="exp_tech_icon_csharp_2">C# Icon</string>
+    
+        <string name="exp_tech_icon_unity3d_3">Unity 3D Icon</string>
+        <string name="exp_tech_icon_csharp_3">C# Icon</string>
+        <string name="exp_tech_icon_figma_3">Figma Icon</string>
+    
+        <string name="exp_tech_icon_unity3d_4">Unity 3D Icon</string>
+        <string name="exp_tech_icon_csharp_4">C# Icon</string>
+
+        <string name="exp_tech_icon_trello_5">Trello Icon</string>
+        <string name="exp_tech_icon_figma_5">Figma Icon</string>
+
+        <string name="left_arrow">Left Arrow</string>
+        <string name="right_arrow">Right Arrow</string>
+        <!-- End Icon Name -->
+    <!-- End Exp General -->
+
+    <!-- Exp 0 -->
+    <string name="exp_company_0">Freelancer</string>
+    <string name="exp_timeframe_0">Aug 2023 - Present</string>
+    <string name="exp_position_0">Back-End Developer Freelance</string>
+    <string name="exp_desc_0">Iam actively developing backend infrastructure for
+        companies or personal websites.
+    </string>
+    <string name="exp_desc_jobdesc_0">
+        \u25AA Currently developing Tazma Optik (Optic Store based in Bandung, Indonesia) website. \n
+        \u25AA Developing business modules such as vendor purchases module, monitoring module,
+            cashier module, expenditure module, branch sales module, etc. \n
+        \u25AA Actively developing Backend infrastructure using Laravel, Node.js, ASP.Net Core. \n
+        \u25AA Proficient in using MySQL, PostgreSQL, SQL Server Databases.
+    </string>
+    <!-- End Exp 0 -->
+
+    <!-- Exp 1 -->
+    <string name="exp_company_1">Otoritas Jasa Keuangan</string>
+    <string name="exp_timeframe_1">Aug 2023 - Dec 2023</string>
+    <string name="exp_position_1">Software Developer Intern</string>
+    <string name="exp_desc_1">Otoritas Jasa Keuangan (OJK) is a Financial Services
+        Authority responsible for overseeing and regulating the financial services industry
+        in Indonesia
+    </string>
+    <string name="exp_desc_jobdesc_1">
+        \u25AA Developing a robust data visualization and
+            reporting infrastructure, leveraging Tableau and SQL Server. \n
+        \u25AA Utilized by internal auditors and risk data analysts, offering real-time auditing and risk insights.
+    </string>
+    <!-- End Exp 1 -->
+
+    <!-- Exp 2 -->
+    <string name="exp_company_2">Institut Teknologi Sepuluh Nopember</string>
+    <string name="exp_timeframe_2">Jan 2022 - Sep 2023</string>
+    <string name="exp_position_2">Augmented Reality Developer</string>
+    <string name="exp_desc_2">A research development project led by Prof. Drs. Ec. Ir.
+        Riyanarto Sarno, M. Sc, Ph. D to develop AR application that helped Medical Student to
+        understand human brain using Augmented Reality.</string>
+    <string name="exp_desc_jobdesc_2">
+        \u25AA Proficiently utilized Unity3D and Vuforia Engine to create a real-time augmented
+            reality (AR) Android application. Demonstrated expertise in AR technology, ensuring
+            seamless integration of tracking features for an immersive user experience. \n
+        \u25AA Utilized 3D Slicer software to transform authentic brain MRI images into 3D objects,
+        seamlessly integrating them into the AR application.
+    </string>
+    <!-- End Exp 2 -->
+
+    <!-- Exp 3 -->
+    <string name="exp_company_3">Institut Teknologi Sepuluh Nopember</string>
+    <string name="exp_timeframe_3">Feb 2023 - Aug 2023</string>
+    <string name="exp_position_3">Unity3D Developer</string>
+    <string name="exp_desc_3">A research and development initiative, under the leadership of Dr.
+        Eng. Yuda Apri Hermawan, S.T., M.T., was undertaken to create a ship maneuvering
+        application. This application is designed to assist ship designers in ensuring compliance
+        with IMO regulations during the ship design phase, thus streamlining the shipbuilding
+        process.
+    </string>
+    <string name="exp_desc_jobdesc_3">
+        \u25AA Using Unity3D Engine to implement 3d ship maneuvering visualization.
+    </string>
+    <!-- End Exp 3 -->
+
+    <!-- Exp 4 -->
+    <string name="exp_company_4">Tekno Sains Academy ITS</string>
+    <string name="exp_timeframe_4">Nov 2022 - May 2023</string>
+    <string name="exp_position_4">Game Developer Trainer</string>
+    <string name="exp_desc_4">One of business unit in PT. ITS Tekno Sains focused in Training and
+            Certification.
+    </string>
+    <string name="exp_desc_jobdesc_4">
+        \u25AA Conducted training sessions aimed at beginners in Unity3D game development. \n
+        \u25AA Mentored 15 students in the development process, resulting in 3 students achieving
+            the remarkable milestone of publishing their games on the Google Play Store.
+    </string>
+    <!-- End Exp 4 -->
+
+    <!-- Exp 5 -->
+    <string name="exp_company_5">Educator.Id</string>
+    <string name="exp_timeframe_5">Oct 2021 - Jan 2022</string>
+    <string name="exp_position_5">Information Techonology Intern</string>
+    <string name="exp_desc_5">Educational and skills learning course platform from practicing tutors.
+    </string>
+    <string name="exp_desc_jobdesc_5">
+        \u25AA Assigned the responsibility of analyzing the Educator.id system as part of the
+            upcoming website development project at Educator.ID.
+    </string>
+    <!-- End Exp 5 -->
+
+</resources>
