@@ -1,3 +1,34 @@
 <resources>
     <string name="app_name">Assignment2</string>
+
+    <!-- START Calc Symbols -->
+    <string name="sym_clear">C</string>
+    <string name="sym_bracket">()</string>
+    <string name="sym_percent">%</string>
+    <string name="sym_div">/</string>
+    <string name="sym_mul">X</string>
+    <string name="sym_sub">—</string>
+    <string name="sym_add">+</string>
+    <string name="sym_sum">=</string>
+    <string name="sym_plusmin">+/-</string>
+    <string name="sym_dot">.</string>
+    <!-- END Calc Symbols -->
+
+    <!-- START Calc Numbers -->
+    <string name="num_0">0</string>
+    <string name="num_1">1</string>
+    <string name="num_2">2</string>
+    <string name="num_3">3</string>
+    <string name="num_4">4</string>
+    <string name="num_5">5</string>
+    <string name="num_6">6</string>
+    <string name="num_7">7</string>
+    <string name="num_8">8</string>
+    <string name="num_9">9</string>
+    <!-- END Calc Numbers -->
+
+    <!-- START Calc Desc Info -->
+    <string name="desc_backspace">Backspace Icon</string>
+    <!-- END Calc Desc Info -->
+
 </resources>
