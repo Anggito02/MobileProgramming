@@ -4,7 +4,7 @@
     <!-- START Calc Symbols -->
     <string name="sym_clear">C</string>
     <string name="sym_bracket">()</string>
-    <string name="sym_percent">%</string>
+    <string name="sym_mod">%</string>
     <string name="sym_div">/</string>
     <string name="sym_mul">X</string>
     <string name="sym_sub">—</string>

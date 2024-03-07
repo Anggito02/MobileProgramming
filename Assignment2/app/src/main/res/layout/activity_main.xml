@@ -32,12 +32,12 @@
         android:id="@+id/divider"
         android:layout_width="match_parent"
         android:layout_height="6dp"
-        android:layout_below="@+id/backspace_button"
+        android:layout_below="@+id/btn_backspace"
         android:layout_marginTop="12dp"
         android:background="@drawable/ui_rounder" />
 
     <ImageButton
-        android:id="@+id/backspace_button"
+        android:id="@+id/btn_backspace"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_below="@+id/temp_result"
@@ -89,7 +89,7 @@
                 android:textColor="@color/symbol" />
 
             <Button
-                android:id="@+id/btn_percent"
+                android:id="@+id/btn_mod"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -99,7 +99,7 @@
                 android:minHeight="0dp"
                 android:padding="0dp"
                 android:background="@drawable/round_button_secondary"
-                android:text="@string/sym_percent"
+                android:text="@string/sym_mod"
                 android:textSize="34sp"
                 android:textColor="@color/symbol" />
 
