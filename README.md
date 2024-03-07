@@ -1,4 +1,4 @@
-# MobileProgramming
+# Mobile Programming
 Mobile Programming subject repository
 
 ## Submission 1 - View
