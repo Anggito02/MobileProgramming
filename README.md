@@ -9,7 +9,7 @@ Mobile Programming subject repository
     <img src="./figures/assignment_1_figure.png" alt="Assigment 1" width="300" text-align="center">
 </p>
 
-## Submission 2 - Calculator
+## Submission 2 - Calculator & Hitung Luas
 - Project description: Calculator Android Application
 - Project link: [Project Demo](https://youtu.be/d1i6trg7VVw)
 <p align="center">
