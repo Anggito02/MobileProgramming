@@ -15,3 +15,10 @@ Mobile Programming subject repository
 <p align="center">
     <img src="./figures/assignment_2_figure.png" alt="Assigment 2" width="300" text-align="center">
 </p>
+
+## Submission 3 - Login using SQLite
+- Project description: SQLite Implementation
+- Project link: [Project Demo](https://youtu.be/d1i6trg7VVw)
+<p align="center">
+    <img src="./figures/assignment_3_figure.png" alt="Assigment 3" width="300" text-align="center">
+</p>

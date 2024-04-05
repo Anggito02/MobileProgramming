@@ -2,7 +2,7 @@
     <string name="app_name">Assignment 3 - CRUD SQLite</string>
 
     <!-- START LOGIN -->
-    <string name="email_hint">Enter Your E-mail</string>
+    <string name="username_hint">Enter Your Username</string>
     <string name="password_hint">Enter Your Password</string>
     <string name="txt_login">Login</string>
     <string name='txt_signup'>Don\'t have account?</string>

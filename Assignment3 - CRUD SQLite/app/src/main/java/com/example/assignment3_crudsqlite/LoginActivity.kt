@@ -75,12 +75,12 @@ class LoginActivity : AppCompatActivity(), OnClickListener {
                 val lastName = cursor.getString(lastNameIndex)
 
                 return User(
-                    id,
-                    username,
-                    password,
-                    email,
-                    firstName,
-                    lastName
+                    id = id,
+                    username = username,
+                    password = password,
+                    email = email,
+                    firstName = firstName,
+                    lastName = lastName
                 )
             }
         }
