@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Assignment 3 - CRUD SQLite</string>
+
+    <!-- START LOGIN -->
+    <string name="email_hint">Enter Your E-mail</string>
+    <string name="password_hint">Enter Your Password</string>
+    <string name="txt_login">Login</string>
+    <string name='txt_signup'>Don\'t have account?</string>
+    <string name="txt_register">Register</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <!-- END LOGIN -->
+
+    <!-- START REGISTER -->
+    <string name="reg_txt_create_account">Create New Account</string>
+    <string name="reg_first_name_hint">First Name</string>
+    <string name="reg_last_name_hint">Last Name</string>
+    <string name="reg_email_hint">Email</string>
+    <string name="reg_username_hint">Username</string>
+    <string name="reg_password_hint">Password</string>
+    <string name="reg_create_account">Create Account</string>
+    <!-- END REGISTER -->
+
+    <!-- START HOME -->
+    <string name="home_edit_data">Update my data</string>
+    <string name="home_delete_data">Delete Account</string>
+    <string name="home_logout">Logout</string>
+    <string name="home_hint_first_name">First Name</string>
+    <string name="home_hint_last_name">Last Name</string>
+    <string name="home_hint_email">Email</string>
+    <string name="home_hint_username">Username</string>
+    <string name="home_hint_password">Password</string>
+    <!-- END HOME -->
+
+    <!-- START DESC-->
+    <string name="desc_edit">Edit</string>
+    <!-- END DESC-->
+</resources>

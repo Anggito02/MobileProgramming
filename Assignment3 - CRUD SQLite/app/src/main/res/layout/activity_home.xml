@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/crud_home"
+    android:padding="20dp"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="267dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="80dp"
+        android:text="Hello, Testing"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="20dp">
+
+        <TableRow
+            android:id="@+id/trow_first_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:weightSum="100">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="98"
+                android:clickable="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/home_first_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:hint="@string/home_hint_first_name"
+                    android:text="First"
+                    android:textColor="@color/primary_dark"
+                    android:textStyle="bold" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ToggleButton
+                android:id="@+id/toggle_btn_first_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:scaleX="0.4"
+                android:scaleY="0.5"
+                android:background="@drawable/edit_icon"
+                android:textOff=""
+                android:textOn="" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/trow_last_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:weightSum="100">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="98"
+                android:clickable="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/home_last_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:hint="@string/home_hint_last_name"
+                    android:text="Last"
+                    android:textColor="@color/primary_dark"
+                    android:textStyle="bold" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ToggleButton
+                android:id="@+id/toggle_btn_last_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:scaleX="0.4"
+                android:scaleY="0.5"
+                android:background="@drawable/edit_icon"
+                android:textOff=""
+                android:textOn="" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/trow_email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:weightSum="100">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="98"
+                android:clickable="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/home_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:hint="@string/home_hint_email"
+                    android:text="email@email.com"
+                    android:textColor="@color/primary_dark"
+                    android:textStyle="bold" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ToggleButton
+                android:id="@+id/toggle_btn_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:scaleX="0.4"
+                android:scaleY="0.5"
+                android:background="@drawable/edit_icon"
+                android:textOff=""
+                android:textOn="" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/trow_username"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:weightSum="100">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="98"
+                android:clickable="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/home_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:hint="@string/home_hint_username"
+                    android:text="Username"
+                    android:textColor="@color/primary_dark"
+                    android:textStyle="bold" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ToggleButton
+                android:id="@+id/toggle_btn_username"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:scaleX="0.4"
+                android:scaleY="0.5"
+                android:background="@drawable/edit_icon"
+                android:textOff=""
+                android:textOn="" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/trow_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:weightSum="100">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="98"
+                android:clickable="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/home_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:hint="@string/home_hint_password"
+                    android:text="Password"
+                    android:textColor="@color/primary_dark"
+                    android:textStyle="bold" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ToggleButton
+                android:id="@+id/toggle_btn_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:scaleX="0.4"
+                android:scaleY="0.5"
+                android:background="@drawable/edit_icon"
+                android:textOff=""
+                android:textOn="" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btn_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@+id/tableLayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="14dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:backgroundTint="@color/edit"
+        android:text="@string/home_edit_data"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btn_edit"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="14dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="80dp"
+        android:backgroundTint="@color/delete"
+        android:text="@string/home_delete_data"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="@color/delete"
+        android:text="@string/home_logout"
+        android:textStyle="bold" />
+
+</RelativeLayout>
