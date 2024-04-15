@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Assignment4 - ToDo App</string>
+
+    <!-- CONTENT DESCRIPTION -->
+    <string name="desc_button_check">Button Check</string>
+    <string name="desc_button_cross">Button Cancel</string>
+    <string name="desc_new_task">wash dishes…</string>
+    <string name="title_add_new_task">Add new Task</string>
+    <!-- END CONTENT DESCRIPTION -->
+</resources>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/dm_sans_bold"
+        android:gravity="center"
+        android:text="@string/title_add_new_task"
+        android:textSize="32sp"
+        />
+
+    <EditText
+        android:id="@+id/et_add_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_title"
+        android:fontFamily="@font/dm_sans"
+        android:paddingHorizontal="6dp"
+        android:autofillHints="task"
+        android:hint="@string/desc_new_task"
+        android:textSize="24sp"
+        android:inputType="text"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_add_task"
+        android:weightSum="100"
+        >
+
+        <ImageButton
+            android:id="@+id/btn_dialog_cancel"
+            android:layout_width="0dp"
+            android:layout_height="54dp"
+            android:layout_weight="50"
+            android:background="@color/primary"
+            app:srcCompat="@drawable/x"
+            android:contentDescription="@string/desc_button_cross"
+            />
+
+        <ImageButton
+            android:id="@+id/btn_dialog_check"
+            android:layout_width="0dp"
+            android:layout_height="54dp"
+            android:layout_weight="50"
+            android:background="@color/primary"
+            app:srcCompat="@drawable/check_white"
+            android:contentDescription="@string/desc_button_check"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

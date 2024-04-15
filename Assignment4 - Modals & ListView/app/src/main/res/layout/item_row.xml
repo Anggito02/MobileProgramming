@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:orientation="horizontal"
+    android:padding="4dp"
+    android:weightSum="100"
+    >
+
+    <EditText
+        android:id="@+id/et_row_task"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="82"
+        android:autofillHints="Edit your task"
+        android:background="@null"
+        android:fontFamily="@font/dm_sans_medium"
+        android:inputType="text"
+        android:padding="8dp"
+        android:text="wash dishes"
+        android:textColor="@color/primary"
+        android:textSize="28sp"
+        />
+
+    <ImageButton
+        android:id="@+id/ibtn_row_check"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="18"
+        android:background="@null"
+        app:srcCompat="@drawable/check_primary"
+        android:contentDescription="@string/desc_button_check" />
+
+
+</LinearLayout>
