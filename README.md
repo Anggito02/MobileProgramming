@@ -22,3 +22,11 @@ Mobile Programming subject repository
 <p align="center">
     <img src="./figures/assignment_3_figure.png" alt="Assigment 3" width="300" text-align="center">
 </p>
+
+
+## Submission 4 - Mini Todo List
+- Project description: App-spesific storage implementation. Dialog and Listview implementation
+- Project Link: [Project Demo](https://youtu.be/zYYTRWuvBPA)
+<p align="center">
+    <img src="./figures/assignment_4_figure.png" alt="Assigment 3" width="300" text-align="center">
+</p>
