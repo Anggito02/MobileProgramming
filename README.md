@@ -30,3 +30,10 @@ Mobile Programming subject repository
 <p align="center">
     <img src="./figures/assignment_4_figure.png" alt="Assigment 3" width="300" text-align="center">
 </p>
+
+## Submission 5 - Json Parser
+- Project description: Using HttpHandler to fetch a Json data from the internet
+- Project Link: [Project Demo](https://youtu.be/yXZP7q9TN0U)
+<p align="center">
+    <img src="./figures/assignment_5_figure.png" alt="Assigment 3" width="300" text-align="center">
+</p>
