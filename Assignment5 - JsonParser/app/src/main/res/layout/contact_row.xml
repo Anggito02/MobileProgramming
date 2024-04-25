@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/LL_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    android:orientation="horizontal"
+    android:weightSum="100"
+    >
+
+    <ImageView
+        android:id="@+id/IV_profile_pict"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/user_profile_male"
+        android:contentDescription="@string/desc_profile_pict" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="80"
+        android:paddingHorizontal="8dp"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/main_contact_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alata"
+            android:textSize="28sp"
+            />
+
+        <TextView
+            android:id="@+id/main_contact_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main_contact_name"
+            android:fontFamily="sans-serif-light"
+            android:letterSpacing="0.2"
+            />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">JSON Parser</string>
+    <string name="CONTACTS_URL">https://gist.githubusercontent.com/Baalmart/8414268/raw/43b0e25711472de37319d870cb4f4b35b1ec9d26/contacts</string>
+
+    <string name="main_title">Contacts</string>
+
+    <!-- Descriptions & Captions -->
+    <string name="desc_profile_pict">Profile Picture</string>
+    <string name="desc_back_icon">Back Icon</string>
+    <string name="caption_profile_detail_name">Name</string>
+    <string name="caption_profile_detail_email">Email</string>
+    <string name="caption_profile_detail_address">Address</string>
+    <string name="caption_profile_detail_gender">Gender</string>
+    <string name="caption_profile_detail_phone">Phone</string>
+
+    <!-- Symbols -->
+    <string name="double_dot">:</string>
+
+</resources>

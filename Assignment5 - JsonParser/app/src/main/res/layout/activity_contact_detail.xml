@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="12dp"
+    android:paddingVertical="24dp"
+    >
+
+    <ImageButton
+        android:id="@+id/detail_IB_back_to_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@null"
+        android:contentDescription="@string/desc_back_icon"
+        app:srcCompat="@drawable/left_arrow" />
+
+    <ImageView
+        android:id="@+id/detail_IV_profile_pict"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:maxHeight="168dp"
+        android:layout_marginBottom="32dp"
+
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/user_profile_male"
+        android:contentDescription="@string/desc_profile_pict" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detail_IV_profile_pict"
+        >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="8dp"
+            android:weightSum="100"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                android:fontFamily="@font/alata"
+                android:text="@string/caption_profile_detail_name"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="start|center"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:fontFamily="@font/alata"
+                android:text="@string/double_dot"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/detail_TV_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="start|center"
+                android:layout_weight="65"
+                android:fontFamily="@font/alata"
+                android:text="Leonardo de Caprio"
+                android:textSize="20sp"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100"
+            android:paddingVertical="8dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                android:fontFamily="@font/alata"
+                android:text="@string/caption_profile_detail_email"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="start|center"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:fontFamily="@font/alata"
+                android:text="@string/double_dot"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/detail_TV_email"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="start|center"
+                android:layout_weight="65"
+                android:fontFamily="@font/alata"
+                android:text="Leonardo de Caprio"
+                android:textSize="20sp"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100"
+            android:paddingVertical="8dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                android:fontFamily="@font/alata"
+                android:text="@string/caption_profile_detail_address"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="start|center"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:fontFamily="@font/alata"
+                android:text="@string/double_dot"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/detail_TV_address"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="start|center"
+                android:layout_weight="65"
+                android:fontFamily="@font/alata"
+                android:text="Leonardo de Caprio"
+                android:textSize="20sp"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100"
+            android:paddingVertical="8dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                android:fontFamily="@font/alata"
+                android:text="@string/caption_profile_detail_gender"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="start|center"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:fontFamily="@font/alata"
+                android:text="@string/double_dot"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/detail_TV_gender"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="start|center"
+                android:layout_weight="65"
+                android:fontFamily="@font/alata"
+                android:text="Leonardo de Caprio"
+                android:textSize="20sp"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100"
+            android:paddingVertical="8dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                android:fontFamily="@font/alata"
+                android:text="@string/caption_profile_detail_phone"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="start|center"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:fontFamily="@font/alata"
+                android:text="@string/double_dot"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/detail_TV_phone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="start|center"
+                android:layout_weight="65"
+                android:fontFamily="@font/alata"
+                android:text="Leonardo de Caprio\nHello\n+62 811 330 0609"
+                android:textSize="20sp"
+                />
+
+        </TableRow>
+    </TableLayout>
+
+
+</RelativeLayout>
