@@ -22,9 +22,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 
 class MainActivity : AppCompatActivity(), OnClickListener, UpdateImageViewCallback {
-    private val WRITE_EXTERNAL_STORAGE_PERMISSION_CODE = 223
-    private val WRITE_EXTERNAL_STORAGE_PERMISSION = Manifest.permission.WRITE_EXTERNAL_STORAGE
-
     private val _controller = MainActivityController(this, this)
     lateinit var _cameraActivityResultLauncher : ActivityResultLauncher<Intent>
 
@@ -37,7 +34,6 @@ class MainActivity : AppCompatActivity(), OnClickListener, UpdateImageViewCallba
         setContentView(R.layout.activity_main)
 
         _cameraActivityResultLauncher = _getCameraActivityResultLauncher()
-        _askWritePermission()
 
         IV_CameraView = findViewById(R.id.IV_camera_view)
         Btn_TakePicture = findViewById(R.id.Btn_take_pict)
@@ -61,47 +57,6 @@ class MainActivity : AppCompatActivity(), OnClickListener, UpdateImageViewCallba
 
     override fun updateImageView(imageBitmap : Bitmap) {
         IV_CameraView.setImageBitmap(imageBitmap)
-    }
-
-    override fun onRequestPermissionsResult(
-        requestCode: Int,
-        permissions: Array<out String>,
-        grantResults: IntArray
-    ) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
-        if (requestCode == WRITE_EXTERNAL_STORAGE_PERMISSION_CODE) {
-            if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                Toast.makeText(this, "WRITE_EXTERNAL_STORAGE Permission Granted", Toast.LENGTH_SHORT).show()
-            } else {
-                Toast.makeText(this, "WRITE_EXTERNAL_STORAGE Permission Denied", Toast.LENGTH_SHORT).show()
-            }
-        }
-    }
-
-    private fun _askWritePermission() {
-        val cameraPermission = checkSelfPermission(WRITE_EXTERNAL_STORAGE_PERMISSION)
-
-        if (cameraPermission ==  PackageManager.PERMISSION_GRANTED) {
-            Toast.makeText(this, "WRITE_EXTERNAL_STORAGE Access Granted", Toast.LENGTH_SHORT).show()
-        } else {
-            val alertDialogBuilder = AlertDialog.Builder(this)
-
-            alertDialogBuilder
-                .setMessage("This app requires WRITE_EXTERNAL_STORAGE permission")
-                .setTitle("Permission Required")
-                .setCancelable(false)
-                .setPositiveButton("Allow") {
-                        dialog, _ ->
-                    val permissionsArray = arrayOf(WRITE_EXTERNAL_STORAGE_PERMISSION)
-                    ActivityCompat.requestPermissions(this, permissionsArray, WRITE_EXTERNAL_STORAGE_PERMISSION_CODE)
-                    dialog.dismiss()
-                }
-                .setNegativeButton("Don't Allow") {
-                        _, _ -> finish()
-                }
-
-            alertDialogBuilder.show()
-        }
     }
 
     @RequiresApi(Build.VERSION_CODES.TIRAMISU)
