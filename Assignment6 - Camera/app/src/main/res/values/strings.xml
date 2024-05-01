@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">Camera App</string>
+    <string name="BACKEND_URL">https://2636-139-228-92-172.ngrok-free.app</string>
 
     <!-- DESCRIPTIONS -->
     <string name="desc_IV_camera_view">Camera View</string>
     <string name="desc_Btn_take_pict">Shot Button</string>
+    <string name="desc_Btn_upload">Upload Photo</string>
 </resources>

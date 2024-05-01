@@ -1,11 +1,7 @@
 package com.assignment6_camera
 
-import android.Manifest
 import android.app.Activity
-import android.app.AlertDialog
-import android.content.DialogInterface
 import android.content.Intent
-import android.content.pm.PackageManager
 import android.graphics.Bitmap
 import android.os.Build
 import android.os.Bundle
@@ -14,19 +10,19 @@ import android.view.View
 import android.view.View.OnClickListener
 import android.widget.Button
 import android.widget.ImageView
-import android.widget.Toast
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.app.ActivityCompat
+import androidx.core.graphics.drawable.toBitmap
 
-class MainActivity : AppCompatActivity(), OnClickListener, UpdateImageViewCallback {
+class MainActivity : AppCompatActivity(), OnClickListener, MainActivityCallback {
     private val _controller = MainActivityController(this, this)
     lateinit var _cameraActivityResultLauncher : ActivityResultLauncher<Intent>
 
     lateinit var IV_CameraView : ImageView
     lateinit var Btn_TakePicture : Button
+    lateinit var Btn_Upload : Button
 
     @RequiresApi(Build.VERSION_CODES.TIRAMISU)
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,8 +33,10 @@ class MainActivity : AppCompatActivity(), OnClickListener, UpdateImageViewCallba
 
         IV_CameraView = findViewById(R.id.IV_camera_view)
         Btn_TakePicture = findViewById(R.id.Btn_take_pict)
+        Btn_Upload = findViewById(R.id.Btn_upload)
 
         Btn_TakePicture.setOnClickListener(this)
+        Btn_Upload.setOnClickListener(this)
     }
 
     @RequiresApi(Build.VERSION_CODES.TIRAMISU)
@@ -46,8 +44,19 @@ class MainActivity : AppCompatActivity(), OnClickListener, UpdateImageViewCallba
         when (v?.id) {
             R.id.Btn_take_pict -> {
                 try {
+                    // Take and save image
                     val cameraActivityIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
                     _cameraActivityResultLauncher.launch(cameraActivityIntent)
+                } catch (ex : Exception) {
+                    ex.printStackTrace()
+                }
+            }
+
+            R.id.Btn_upload -> {
+                try {
+                    val imageByteArray : ByteArray = _controller.bitmapToByteArray(IV_CameraView.drawable.toBitmap())
+
+                    _controller.uploadImage(resources.getString(R.string.BACKEND_URL), imageByteArray)
                 } catch (ex : Exception) {
                     ex.printStackTrace()
                 }
@@ -57,6 +66,10 @@ class MainActivity : AppCompatActivity(), OnClickListener, UpdateImageViewCallba
 
     override fun updateImageView(imageBitmap : Bitmap) {
         IV_CameraView.setImageBitmap(imageBitmap)
+    }
+
+    override fun showUploadButton() {
+        Btn_Upload.visibility = View.VISIBLE
     }
 
     @RequiresApi(Build.VERSION_CODES.TIRAMISU)

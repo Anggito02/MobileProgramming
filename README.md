@@ -32,8 +32,15 @@ Mobile Programming subject repository
 </p>
 
 ## Submission 5 - Json Parser
-- Project description: Using HttpHandler to fetch a Json data from the internet
+- Project description: Using HttpURLConnection to fetch a Json data from the internet
 - Project Link: [Project Demo](https://youtu.be/yXZP7q9TN0U)
 <p align="center">
     <img src="./figures/assignment_5_figure.png" alt="Assigment 3" width="300" text-align="center">
+</p>
+
+## Submission 6 - Simple Image Upload Application
+- Project description: Using HttpURLConnection to upload to the backend and implements content resolver to save images
+- Project Link: [Project Demo](https://youtu.be/0ANn01Z90X0)
+<p align="center">
+    <img src="./figures/assignment_6_figure.png" alt="Assigment 3" width="300" text-align="center">
 </p>

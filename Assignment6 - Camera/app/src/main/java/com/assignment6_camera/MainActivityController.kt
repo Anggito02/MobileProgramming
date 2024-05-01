@@ -7,13 +7,18 @@ import android.content.Intent
 import android.graphics.Bitmap
 import android.net.Uri
 import android.os.Build
+import android.os.Handler
+import android.os.Looper
 import android.provider.MediaStore
 import android.text.format.DateFormat
 import android.widget.Toast
 import androidx.annotation.RequiresApi
+import java.io.ByteArrayOutputStream
 import java.util.Date
+import java.util.concurrent.Executor
+import java.util.concurrent.Executors
 
-class MainActivityController(private val context: Context, private val callback: UpdateImageViewCallback) {
+class MainActivityController(private val context: Context, private val callback: MainActivityCallback) {
     @SuppressLint("Recycle")
     @RequiresApi(Build.VERSION_CODES.TIRAMISU)
     fun saveImageFile(intent : Intent?) {
@@ -24,16 +29,6 @@ class MainActivityController(private val context: Context, private val callback:
 
             val imageBitmap : Bitmap = intent.getParcelableExtra("data", Bitmap::class.java)
                 ?: throw Exception("Error passing image file!")
-
-//            val byteOutputStream = ByteArrayOutputStream()
-//            imageBitmap.compress(Bitmap.CompressFormat.PNG, 100, byteOutputStream)
-//            val byteArray : ByteArray = byteOutputStream.toByteArray()
-//
-//            // save to external storage
-//            val dir = File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DCIM).toString())
-//            val date = Date()
-//            val dateNow = DateFormat.format("MM-dd-yyyy hh-mm-ss", date.time)
-//            val imageUri = File(dir, "capture_${dateNow}")
 
             val dirUri : Uri
             val contentResolver = context.contentResolver
@@ -66,6 +61,42 @@ class MainActivityController(private val context: Context, private val callback:
 
             // update the image view
             callback.updateImageView(imageBitmap)
+
+            // show upload button
+            callback.showUploadButton()
+
+        } catch (ex : Exception) {
+            throw ex
+        }
+    }
+
+    fun bitmapToByteArray(imageBitmap: Bitmap) : ByteArray {
+        val byteStream = ByteArrayOutputStream()
+        imageBitmap.compress(Bitmap.CompressFormat.PNG, 100, byteStream)
+        return byteStream.toByteArray()
+    }
+
+    @RequiresApi(Build.VERSION_CODES.O)
+    fun uploadImage(requestUrl : String, imageByteArray: ByteArray) {
+        try {
+            val executor : Executor = Executors.newSingleThreadExecutor()
+            val uiHandler = Handler(Looper.getMainLooper())
+            val uploadImageApi = "${requestUrl}/api/upload-photo"
+
+            Toast.makeText(context, "Uploading image...", Toast.LENGTH_SHORT).show()
+
+            executor.execute {
+                val httpHandler = HttpHandler()
+                val result = httpHandler.uploadImage(uploadImageApi, imageByteArray)
+
+                uiHandler.post {
+                    if (result) {
+                        Toast.makeText(context, "Image uploaded", Toast.LENGTH_SHORT).show()
+                    } else {
+                        Toast.makeText(context, "Failed to upload image", Toast.LENGTH_SHORT).show()
+                    }
+                }
+            }
 
         } catch (ex : Exception) {
             throw ex

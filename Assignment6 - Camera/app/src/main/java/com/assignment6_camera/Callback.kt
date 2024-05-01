@@ -2,6 +2,7 @@ package com.assignment6_camera
 
 import android.graphics.Bitmap
 
-interface UpdateImageViewCallback {
+interface MainActivityCallback {
     fun updateImageView(imageBitmap : Bitmap)
+    fun showUploadButton()
 }
