@@ -20,14 +20,13 @@ import java.util.concurrent.Executors
 
 class MainActivityController(private val context: Context, private val callback: MainActivityCallback) {
     @SuppressLint("Recycle")
-    @RequiresApi(Build.VERSION_CODES.TIRAMISU)
     fun saveImageFile(intent : Intent?) {
         try {
             if (intent == null) {
                 throw Exception("Error passing image file!")
             }
 
-            val imageBitmap : Bitmap = intent.getParcelableExtra("data", Bitmap::class.java)
+            val imageBitmap : Bitmap = intent.getParcelableExtra("data")
                 ?: throw Exception("Error passing image file!")
 
             val dirUri : Uri

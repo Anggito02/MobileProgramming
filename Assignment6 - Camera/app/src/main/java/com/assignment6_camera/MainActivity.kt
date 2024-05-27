@@ -24,7 +24,6 @@ class MainActivity : AppCompatActivity(), OnClickListener, MainActivityCallback 
     lateinit var Btn_TakePicture : Button
     lateinit var Btn_Upload : Button
 
-    @RequiresApi(Build.VERSION_CODES.TIRAMISU)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -39,7 +38,7 @@ class MainActivity : AppCompatActivity(), OnClickListener, MainActivityCallback 
         Btn_Upload.setOnClickListener(this)
     }
 
-    @RequiresApi(Build.VERSION_CODES.TIRAMISU)
+    @RequiresApi(Build.VERSION_CODES.O)
     override fun onClick(v: View?) {
         when (v?.id) {
             R.id.Btn_take_pict -> {
@@ -72,7 +71,6 @@ class MainActivity : AppCompatActivity(), OnClickListener, MainActivityCallback 
         Btn_Upload.visibility = View.VISIBLE
     }
 
-    @RequiresApi(Build.VERSION_CODES.TIRAMISU)
     private fun _getCameraActivityResultLauncher() : ActivityResultLauncher<Intent> {
         try {
             val activityResultLauncher = registerForActivityResult(
