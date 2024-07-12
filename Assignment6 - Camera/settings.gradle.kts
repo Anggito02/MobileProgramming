@@ -1,6 +1,12 @@
 pluginManagement {
     repositories {
-        google()
+        google {
+            content {
+                includeGroupByRegex("com\\.android.*")
+                includeGroupByRegex("com\\.google.*")
+                includeGroupByRegex("androidx.*")
+            }
+        }
         mavenCentral()
         gradlePluginPortal()
     }
@@ -13,6 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Assignment6 - Camera"
+rootProject.name = "Plate Number Recognition"
 include(":app")
- 
